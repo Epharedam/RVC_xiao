@@ -123,7 +123,7 @@ class Acat(Base):
             block_title_text_color_dark='#4EACEF',
             block_title_text_size='*text_md',
             block_title_text_weight='bold',
-            body_background_fill="url('https://cdn.discordapp.com/attachments/1151036558389026838/1158634938128670730/image-removebg-preview_1.png') #FFFFFF no-repeat right bottom/auto 30svh padding-box fixed",
+            body_background_fill="url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/374e309d-713c-4ef2-b941-912bd95a5d52/deblqm8-4885280f-af38-41ef-9a32-9e6cc463de9c.png/v1/fill/w_1920,h_1600/__xiao__render__by_stardustinqs_deblqm8-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTYwMCIsInBhdGgiOiJcL2ZcLzM3NGUzMDlkLTcxM2MtNGVmMi1iOTQxLTkxMmJkOTVhNWQ1MlwvZGVibHFtOC00ODg1MjgwZi1hZjM4LTQxZWYtOWEzMi05ZTZjYzQ2M2RlOWMucG5nIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.d1-eWOY8oZTGcy12ZsV3_4Z1wGRXZeEmVnJYx-EF5zI') #FFFFFF no-repeat right bottom/auto 30svh padding-box fixed",
             body_background_fill_dark="url('https://cdn.discordapp.com/attachments/1151036558389026838/1158634938128670730/image-removebg-preview_1.png') #000000 no-repeat right bottom/auto 30svh padding-box fixed",
             body_text_color='#191919',
             body_text_color_dark='#ECF2F7',
