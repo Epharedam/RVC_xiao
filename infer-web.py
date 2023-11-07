@@ -90,11 +90,11 @@ if True == True:
     port = 8000
 
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    sock.settimeout(2)  # Timeout in seconds
+    sock.settimeout(2)  # Timeout en segs
 
     try:
         sock.connect((host, port))
-        logger.info("Starting the Flask server")
+        logger.info("Inciando el Flask server")
         logger.warn(
             f"Something is listening on port {port}; check open connection and restart Applio."
         )
@@ -110,14 +110,14 @@ if True == True:
             logger.error(f"Failed to start the Flask server")
             logger.error(e)
     except Exception as e:
-        logger.info("Starting the Flask server")
+        logger.info("Inciando el Flask server")
         sock.close()
         script_path = os.path.join(now_dir, "lib", "tools", "server.py")
         try:
             subprocess.Popen(f"python {script_path}", shell=True)
-            logger.info("Flask server started!")
+            logger.info("Flask server iniciado!")
         except Exception as e:
-            logger.error("Failed to start the Flask server")
+            logger.error("falló inciar el server flask")
             logger.error(e)
 
 
@@ -194,7 +194,7 @@ if config.dml == True:
 
 i18n = I18nAuto(os.getenv('LANGUAGE'))
 i18n.print()
-# 判断是否有能用来训练和加速推理的N卡
+
 ngpu = torch.cuda.device_count()
 gpu_infos = []
 mem = []
@@ -218,7 +218,7 @@ if len(gpu_infos) > 0:
     default_batch_size = min(mem) // 2
 else:
     gpu_info = (
-        "Unfortunately, there is no compatible GPU available to support your training."
+        "Desafortunadamente, no hay ninguna GPU compatible disponible para hacer tu entrenamiento."
     )
     default_batch_size = 1
 gpus = "-".join([i[0] for i in gpu_infos])
@@ -380,7 +380,7 @@ def uvr(
     if architecture == "VR":
         try:
             infos.append(
-                i18n("Starting audio conversion... (This might take a moment)")
+                i18n("iniciando conversion de audio... (Esto puede tardar)")
             )
             inp_root = inp_root.strip(" ").strip('"').strip("\n").strip('"').strip(" ")
             save_root_vocal = (
